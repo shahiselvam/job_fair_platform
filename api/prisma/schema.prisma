@@ -23,6 +23,7 @@ model User {
   email         String         @unique
   role          Role           @default(CANDIDATE)
   createdAt     DateTime       @default(now())
+  passwordHash String
   registrations Registration[]
 }
 
